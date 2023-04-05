@@ -1,0 +1,42 @@
+/* ALAS AL VIENTO ======================= */
+body {
+/*     background-color: green; */
+}
+
+
+.navbar>.container-fluid {
+    align-items: flex-end;
+}
+
+
+.nav-link  {
+    color: #b3204f;
+    font-size: 18px;
+    padding-bottom: 0;
+    margin-left: 20px;
+    font-weight: bold;
+}
+.rrssicon{color: black; }
+h1{color: #b3204f; padding-top: 30px; align-content: center; padding-left: 480px ;}
+h2{color: #b3204f; padding-top: 15px;  padding-left: 120px ;}
+#intro {
+    position: relative;
+}
+#intro .logo{ position: absolute; top: 30px; left: 36px;}
+#intro .wrapper {
+    background: rgba(255,255,255,0.3);
+    color: #FFF;
+    position: absolute;
+    top: 20px;
+    left: 60%;
+    right: 5%;
+    bottom: 20px;
+    padding: 20px;
+}
+
+#intro .wrapper p {
+    margin-bottom: 0;
+}
+#intro video {
+    width: 100%;
+}
