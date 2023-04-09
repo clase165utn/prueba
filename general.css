@@ -2,27 +2,26 @@
 body {
 /*     background-color: green; */
 }
-
+*{font-family: 'ABeeZee', sans-serif;
+font-family: 'Nunito', sans-serif;}
 
 .navbar>.container-fluid {
     align-items: flex-end;
 }
 
 
-.nav-link  {
+.nav-link {
     color: #b3204f;
-    font-size: 18px;
+    font-size: 24px;
     padding-bottom: 0;
     margin-left: 20px;
-    font-weight: bold;
 }
-.rrssicon{color: black; }
-h1{color: #b3204f; padding-top: 30px; align-content: center; padding-left: 480px ;}
-h2{color: #b3204f; padding-top: 15px;  padding-left: 120px ;}
+
+
 #intro {
     position: relative;
 }
-#intro .logo{ position: absolute; top: 30px; left: 36px;}
+
 #intro .wrapper {
     background: rgba(255,255,255,0.3);
     color: #FFF;
@@ -40,3 +39,8 @@ h2{color: #b3204f; padding-top: 15px;  padding-left: 120px ;}
 #intro video {
     width: 100%;
 }
+main{width: 1114px; height: auto; margin-left: 118px;}
+h1, h2{text-align: center; color: #b3204f; } h2 {font-size: 24px;}
+#quehacemos{ color: #b3204f; padding: 30px; text-align: justify; background-color: rgb(204, 202, 202);}
+#destinos{color: #b3204f; padding: 30px; text-align: justify;}
+.carousel-caption{background-color: rgba(0, 0, 0, 0.6);}
