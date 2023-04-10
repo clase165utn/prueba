@@ -2,10 +2,10 @@
 body {
 /*     background-color: green; */
 }
-
+*{font-family: 'ABeeZee', sans-serif;}
 
 .navbar>.container-fluid {
-    align-items: flex-end;
+    align-items: flex-end; display: flex; flex-wrap: inherit;
 }
 
 
@@ -38,3 +38,24 @@ body {
 #intro video {
     width: 100%;
 }
+main{width: 1114px; height: auto; margin-left: 118px;}
+
+h2 {font-size: 24px;text-align: center; color: #b3204f;font-weight: bold;text-shadow: 1px 1px 1px #222;padding-top: 30px; padding-bottom: 30px;}
+.quehacemos{ color: #b3204f; padding: 30px; text-align: justify; background-color: rgb(204, 202, 202);}
+#destinos{color: #b3204f; padding: 30px; width: 1114px;}
+.carousel-caption{background-color: rgba(0, 0, 0, 0.6);}
+.rrssicon{color: black;}
+#quienessomos{color: #b3204f; padding: 30px; text-align: justify; background-color: rgb(204, 202, 202);}
+.container-quienessomos{width: 100%; height: auto;}
+.container-quienessomos p {width: 600px; height: 200px;}
+.carlos {display: flex; flex-direction: row;}
+#carlos #carol {display: flex; flex-direction: column;}
+.carol {display: flex; flex-direction: row-reverse;}
+.irene {display: flex; flex-direction: row;}
+#irene {display: flex; flex-direction: column;}
+.marisa  {display: flex; flex-direction: row-reverse;}
+#marisa {display: flex; flex-direction: column;}
+.mara {display: flex; flex-direction: row;}
+#mara {display: flex; flex-direction: column;}
+.fernando  {display: flex; flex-direction: row-reverse;}
+#fernando {display: flex; flex-direction: column;}
