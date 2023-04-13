@@ -1,21 +1,24 @@
 /* ALAS AL VIENTO ======================= */
 body {
-/*     background-color: green; */
+    /*     background-color: green; */
 }
-*{font-family: 'ABeeZee', sans-serif;}
+
+* {
+    font-family: 'Arial', sans-serif;
+}
 
 .navbar>.container-fluid {
-    align-items: flex-end; display: flex; flex-wrap: inherit;
+    align-items: flex-end;
+    display: flex;
+    flex-wrap: inherit;
 }
-
 
 .nav-link {
     color: #b3204f;
-    font-size: 24px;
+    font-size: 20px;
     padding-bottom: 0;
     margin-left: 20px;
 }
-
 
 #intro {
     position: relative;
@@ -35,27 +38,166 @@ body {
 #intro .wrapper p {
     margin-bottom: 0;
 }
+
 #intro video {
     width: 100%;
 }
-main{width: 1114px; height: auto; margin-left: 118px;}
 
-h2 {font-size: 24px;text-align: center; color: #b3204f;font-weight: bold;text-shadow: 1px 1px 1px #222;padding-top: 30px; padding-bottom: 30px;}
-.quehacemos{ color: #b3204f; padding: 30px; text-align: justify; background-color: rgb(204, 202, 202);}
-#destinos{color: #b3204f; padding: 30px; width: 1114px;}
-.carousel-caption{background-color: rgba(0, 0, 0, 0.6);}
-.rrssicon{color: black;}
-#quienessomos{color: #b3204f; padding: 30px; text-align: justify; background-color: rgb(204, 202, 202);}
-.container-quienessomos{width: 100%; height: auto;}
-.container-quienessomos p {width: 600px; height: 200px;}
-.carlos {display: flex; flex-direction: row;}
-#carlos #carol {display: flex; flex-direction: column;}
-.carol {display: flex; flex-direction: row-reverse;}
-.irene {display: flex; flex-direction: row;}
-#irene {display: flex; flex-direction: column;}
-.marisa  {display: flex; flex-direction: row-reverse;}
-#marisa {display: flex; flex-direction: column;}
-.mara {display: flex; flex-direction: row;}
-#mara {display: flex; flex-direction: column;}
-.fernando  {display: flex; flex-direction: row-reverse;}
-#fernando {display: flex; flex-direction: column;}
+.welcome {
+    font-size: 35px;
+    text-align: center;
+    color: #b3204f;
+    font-weight: bold;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    max-width: 800px;
+    margin: 0 auto 0 auto;
+}
+
+#queHacemos {
+    padding: 30px;
+    background-color: #dcddde;
+    margin-bottom: 80px;
+}
+
+#queHacemos .wrapper {
+    max-width: 800px;
+    margin: 0 auto 0 auto;
+}
+
+#queHacemos h3 {
+    color: #b3204f;
+}
+
+#queHacemos p {
+    color: #000000;
+}
+
+#destinos h3 {
+    background-color: #b3204f;
+    color: #fff;
+    text-align: center;
+    padding: 7px;
+    font-size: 40px;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+#destinos h5 {
+    font-size: 35px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#destinos .dates {
+    font-size: 18px;
+    background-color: rgb(0 167 234 / 0.5);
+    padding: 4px;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 1.25rem;
+}
+
+.rrssicon {
+    color: black;
+}
+
+#quienesSomos {
+    color: #b3204f;
+    padding: 30px;
+}
+
+/* #quienesSomos .container{
+    width: 100%;
+    height: auto;
+}
+
+#quienesSomos .container p {
+    width: 333px;
+    height: 200px;
+}
+
+
+ */
+
+#quienesSomos {
+    padding: 90px 0;
+}
+
+#quienesSomos h2 {
+    font-size: 35px;
+    text-decoration: none;
+    
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#quienesSomos ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    row-gap: 30px;
+      
+}
+
+#quienesSomos ul li {
+        background-color: #dcddde;
+    padding: 30px;
+}
+
+
+
+#quienesSomos .name h3 {
+    font-size: 25px;
+    color: #000;
+ 
+    font-weight: bold;
+}
+
+#quienesSomos .photo img {
+    width: 50%;
+    width: calc(40% - 40px);
+    height: 40%;
+    display: inline-flex;
+    width: 120px;
+    height: 120px;
+    margin-bottom: 12px;
+}
+
+#quienesSomos .name h4 {
+    font-size: 20px;
+    margin-bottom: 4px;
+}
+
+
+
+
+
+#quienesSomos .experience p {
+    font-size: 14px;
+    line-height: 1.4em; 
+    margin-bottom: 1.4em;
+    color: #2d2d2d;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1100px) {
+    #quienesSomos ul {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #quienesSomos ul li {
+        padding: 40px 20px;
+    }
+}
