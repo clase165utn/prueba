@@ -155,54 +155,121 @@
         </div>
       </div>
     </section>
-
-    <section id="formulario">
-      <!-- Formulario -->
-      <h3>Completá el formulario para estar mas cerca de tu próximo viaje</h3>
+    <<<<<<< HEAD=======<!-- aca agrego el codigo del formulario-->
+      <div id="showForm">Hacé Click para estar más cerca de tu próximo viaje.</div>
       <div class="container">
         <!--h2 class="display-5">Contacto</h2-->
-        <div id="multistep" class="row mt-1">
+        <section id="multistep" class="row mt-1">
           <div class="col-sm-10 col-md-6 col-lg-6">
+            >>>>>>> a2f8b562733e84e106b06ed47e2ac4d92013e12e
 
-            <!-- step 1 -->
-            <form id="form_1">
-              <fieldset>
-                <legend class="mb-5 text-center bg-info">Datos personales</legend>
-                <div class="mt-3">
-                  <label for="fullName" class="">Nombre y Apellido</label>
+            <section id="formulario">
+              <!-- Formulario -->
+              <h3>Completá el formulario para estar mas cerca de tu próximo viaje</h3>
+              <div class="container">
+                <!--h2 class="display-5">Contacto</h2-->
+                <div id="multistep" class="row mt-1">
+                  <div class="col-sm-10 col-md-6 col-lg-6">
+
+                    <!-- step 1 -->
+                    <form id="form_1">
+                      <fieldset>
+                        <legend class="mb-5 text-center bg-info">Datos personales</legend>
+                        <div class="mt-3">
+                          <label for="fullName" class="">Nombre y Apellido</label>
+                        </div>
+                        <div>
+                          <input type="text" class="" required id="fullName">
+                        </div>
+                        <div class="mt-3">
+                          <label for="phone">Teléfono</label>
+                        </div>
+                        <div>
+                          <input type="tel" id="phone" class="">
+                        </div>
+                        <div class="mt-3">
+                          <label for="email" class="form-label">Correo electrónico</label>
+                        </div>
+                        <div>
+                          <input type="email" id="email" class="" aria-describedby="emailHelp">
+                          <div id="emailHelp" class="">El correo sera usado solamente por nuestra plataforma.</div>
+                        </div>
+                        <div class="mt-3 form-check">
+                          <input type="checkbox" id="check-box" class="form-check-input">
+                          <label class="form-check-label" for="check-box">Enviar promociones</label>
+                        </div>
+                      </fieldset>
+                      <div>
+                        <button id="btn-next-f1" type="button" class="btn-form btn btn-outline-dark">Siguiente</button>
+                      </div>
+                    </form>
+
+                    <!-- Formulario 2 -->
+                    <form id="form_2" class="d-none">
+                      <fieldset>
+                        <legend class="mb-5 text-center bg-info">Seleccione un destino</legend>
+                        <div class="mt-3">
+                          <label for="input" class="">¿Cuantas personas viajan?</label>
+                        </div>
+                        <div>
+                          <input type="text" id="inputPerson" class="">
+                        </div>
+                        <div class="mt-3">
+                          <label for="destiny" class="">Nuestros destinos</label>
+                        </div>
+                        <div>
+                          <select name="destiny" id="destiny" class="">
+                            <option value=""></option selected>
+                          </select>
+                        </div>
+
+                        <div class="mt-3">
+                          <label for="message" class="">Dejenos un mensaje</label>
+                        </div>
+                        <div>
+                          <textarea id="message" class="" enabled cols="30" rows="5"></textarea>
+                        </div>
+                        <div>
+                          <button id="btn-prev-f2" type="button" class="btn-form btn btn-outline-dark">Anterior</button>
+                          <button id="btn-submit" type="button" class="btn-form btn btn-outline-dark"
+                            enabled>Finalizar</button>
+
+                        </div>
+                      </fieldset>
+                    </form>
+
+                  </div>
+                  <div class="mt-3">
+                    <label for="phone">Teléfono</label>
+                  </div>
+                  <div>
+                    <input type="tel" id="phone" class="">
+                  </div>
+                  <div class="mt-3">
+                    <label for="email" class="form-label">Correo electrónico</label>
+                  </div>
+                  <div>
+                    <input type="email" id="email" class="" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="">El correo será usado solamente por nuestra plataforma.</div>
+                  </div>
+                  <div class="mt-3 form-check">
+                    <input type="checkbox" id="check-box" class="form-check-input">
+                    <label class="form-check-label" for="check-box">Enviar promociones</label>
+                  </div>
+                  </fieldset>
+                  <div>
+                    <button id="btn-next-f1" type="button" class="btn-form btn btn-outline-dark">Siguiente</button>
+                  </div>
                 </div>
-                <div>
-                  <input type="text" class="" required id="fullName">
-                </div>
-                <div class="mt-3">
-                  <label for="phone">Teléfono</label>
-                </div>
-                <div>
-                  <input type="tel" id="phone" class="">
-                </div>
-                <div class="mt-3">
-                  <label for="email" class="form-label">Correo electrónico</label>
-                </div>
-                <div>
-                  <input type="email" id="email" class="" aria-describedby="emailHelp">
-                  <div id="emailHelp" class="">El correo sera usado solamente por nuestra plataforma.</div>
-                </div>
-                <div class="mt-3 form-check">
-                  <input type="checkbox" id="check-box" class="form-check-input">
-                  <label class="form-check-label" for="check-box">Enviar promociones</label>
-                </div>
-              </fieldset>
-              <div>
-                <button id="btn-next-f1" type="button" class="btn-form btn btn-outline-dark">Siguiente</button>
-              </div>
-            </form>
+                <!-- fin del formulario-->
+            </section>
 
             <!-- Formulario 2 -->
             <form id="form_2" class="d-none">
               <fieldset>
                 <legend class="mb-5 text-center bg-info">Seleccione un destino</legend>
                 <div class="mt-3">
-                  <label for="input" class="">¿Cuantas personas viajan?</label>
+                  <label for="input" class="">¿Cuántas personas viajan?</label>
                 </div>
                 <div>
                   <input type="text" id="inputPerson" class="">
@@ -217,7 +284,7 @@
                 </div>
 
                 <div class="mt-3">
-                  <label for="message" class="">Dejenos un mensaje</label>
+                  <label for="message" class="">Déjenos un mensaje</label>
                 </div>
                 <div>
                   <textarea id="message" class="" enabled cols="30" rows="5"></textarea>
@@ -229,129 +296,135 @@
                 </div>
               </fieldset>
             </form>
-
           </div>
-        </div>
+        </section>
       </div>
+
+
+
       <!-- fin del formulario-->
-    </section>
+      <section id="quienesSomos">
+        <div class="container">
+          <h2>¿Quiénes Somos?</h2>
+          <ul>
+            <li>
+              <div class="name">
+                <span class="photo">
+                  <img src="img/carlos.svg" alt="foto de Carlos" width="104px" height="118px"></span>
+                <h3>Carlos</h3>
+                <h4>Fundador</h4>
+                <div class="experience">
 
-    <section id="quienesSomos">
-      <div class="container">
-        <h2>¿Quiénes Somos?</h2>
-        <ul>
-          <li>
-            <div class="name">
-              <span class="photo">
-                <img src="img/carlos.svg" alt="foto de Carlos" width="104px" height="118px"></span>
-              <h3>Carlos</h3>
-              <h4>Fundador</h4>
-              <div class="experience">
+                  <p>Carlos es un programador apasionado por la observación de aves. Desde joven ha sido un amante de la
+                    naturaleza y ha pasado muchos años explorando diferentes lugares para encontrar nuevas especies de
+                    aves. Después de trabajar por varios años como programador, combinó sus habilidades técnicas con su
+                    pasión por la observación de aves y fundó esta empresa de turismo especializada en viajes para la
+                    observación de aves. Es el responsable de haber unido a este grupo de profesionales
+                    interdisciplinario
+                    para ofrecerte la más integral de las experiencias de ecoturismo.
+                  </p>
+                </div>
+            </li>
+            <li>
+              <div class="name">
+                <span class="photo">
+                  <img src="img/carolina.svg" alt="foto de Carolina" width="104px" height="118px"></span>
+                <h3>Carolina</h3>
+                <h4>Diseñadora</h4>
+                <div class="experience">
+                  <p>Caro es una diseñadora de imagen y fotógrafa apasionada por la observación de aves. Desde joven ha
+                    estado interesada en la fotografía de naturaleza y ha combinado su amor por las aves con su
+                    experiencia en diseño de imagen. Unió su pasión por la fotografía de aves y su experiencia en diseño
+                    en nuestra empresa, utilizando sus habilidades en diseño para crear campañas publicitarias y
+                    promocionar el emprendimiento. También ha colaborado en la creación de guías de identificación de
+                    aves
+                    para los clientes de la empresa. Con su experiencia en fotografía y diseño de imagen, Caro ha
+                    ayudado
+                    a promover la observación de aves como una actividad única y emocionante.
+                  </p>
+                </div>
+            </li>
+            <li>
+              <div class="name">
+                <span class="photo">
+                  <img src="img/irene.svg" alt="foto de Irene" width="104px" height="118px"></span>
+                <h3>Irene</h3>
+                <h4>Guía Turística</h4>
+                <div class="experience">
 
-                <p>Carlos es un programador apasionado por la observación de aves. Desde joven ha sido un amante de la
-                  naturaleza y ha pasado muchos años explorando diferentes lugares para encontrar nuevas especies de
-                  aves. Después de trabajar por varios años como programador, combinó sus habilidades técnicas con su
-                  pasión por la observación de aves y fundó esta empresa de turismo especializada en viajes para la
-                  observación de aves. Es el responsable de haber unido a este grupo de profesionales interdisciplinario
-                  para ofrecerte la más integral de las experiencias de ecoturismo.
-                </p>
-              </div>
-          </li>
-          <li>
-            <div class="name">
-              <span class="photo">
-                <img src="img/carolina.svg" alt="foto de Carolina" width="104px" height="118px"></span>
-              <h3>Carolina</h3>
-              <h4>Diseñadora</h4>
-              <div class="experience">
-                <p>Caro es una diseñadora de imagen y fotógrafa apasionada por la observación de aves. Desde joven ha
-                  estado interesada en la fotografía de naturaleza y ha combinado su amor por las aves con su
-                  experiencia en diseño de imagen. Unió su pasión por la fotografía de aves y su experiencia en diseño
-                  en nuestra empresa, utilizando sus habilidades en diseño para crear campañas publicitarias y
-                  promocionar el emprendimiento. También ha colaborado en la creación de guías de identificación de aves
-                  para los clientes de la empresa. Con su experiencia en fotografía y diseño de imagen, Caro ha ayudado
-                  a promover la observación de aves como una actividad única y emocionante.
-                </p>
-              </div>
-          </li>
-          <li>
-            <div class="name">
-              <span class="photo">
-                <img src="img/irene.svg" alt="foto de Irene" width="104px" height="118px"></span>
-              <h3>Irene</h3>
-              <h4>Guía Turística</h4>
-              <div class="experience">
+                  <p>Irene es una apasionada de los idiomas y la comunicación. Desde joven, ha estudiado varios
+                    idiomas y ha viajado por todo el mundo para sumergirse en diferentes culturas y formas de vida.
+                    Como guía turística, Irene no sólo es capaz de mostrar a los turistas algunos de los lugares más
+                    increíbles para observar aves, sino que también es capaz de comunicarse con ellos en varios
+                    idiomas y ayudarlos a comprender la cultura y las costumbres locales.
+                    Irene es una experta en la comunicación intercultural y cree firmemente que la observación de
+                    aves es una forma de unir a las personas de diferentes culturas y lenguas en un mismo objetivo:
+                    apreciar proteger la belleza natural del mundo.
+                  </p>
+                </div>
+            </li>
 
-                <p>Irene es una apasionada de los idiomas y la comunicación. Desde joven, ha estudiado varios
-                  idiomas y ha viajado por todo el mundo para sumergirse en diferentes culturas y formas de vida.
-                  Como guía turística, Irene no sólo es capaz de mostrar a los turistas algunos de los lugares más
-                  increíbles para observar aves, sino que también es capaz de comunicarse con ellos en varios
-                  idiomas y ayudarlos a comprender la cultura y las costumbres locales.
-                  Irene es una experta en la comunicación intercultural y cree firmemente que la observación de
-                  aves es una forma de unir a las personas de diferentes culturas y lenguas en un mismo objetivo:
-                  apreciar proteger la belleza natural del mundo.
-                </p>
-              </div>
-          </li>
+            <li>
+              <div class="name">
+                <span class="photo">
+                  <img src="img/marisa.svg" alt="foto de Marisa" width="104px" height="118px"></span>
+                <h3>Marisa</h3>
+                <h4>Guía Turística</h4>
+                <div class="experience">
 
-          <li>
-            <div class="name">
-              <span class="photo">
-                <img src="img/marisa.svg" alt="foto de Marisa" width="104px" height="118px"></span>
-              <h3>Marisa</h3>
-              <h4>Guía Turística</h4>
-              <div class="experience">
+                  <p>Marisa es una apasionada del mar y los chocolates, y también una entusiasta observadora de
+                    aves. Desde muy joven, se ha sentido atraída por la naturaleza y la vida marina, y ha pasado muchos
+                    veranos explorando las playas y observando las aves. Después de varios años siguió su pasión por la
+                    naturaleza y se unió a nuestra empresa como guía turística. Marisa ha llevado a los turistas a
+                    algunos
+                    de los lugares más increíbles para observar aves y disfrutar de la belleza natural de la costa.
+                    También se encarga de la organización de los viajes y de la
+                    atención personalizada a los clientes. Cree firmemente que la observación de aves es una forma de
+                    conectar con la naturaleza y contribuir a su conservación, parte del alma de nuestro emprendimiento.
+                  </p>
+                </div>
+            </li>
 
-                <p>Marisa es una apasionada del mar y los chocolates, y también una entusiasta observadora de
-                  aves. Desde muy joven, se ha sentido atraída por la naturaleza y la vida marina, y ha pasado muchos
-                  veranos explorando las playas y observando las aves. Después de varios años siguió su pasión por la
-                  naturaleza y se unió a nuestra empresa como guía turística. Marisa ha llevado a los turistas a algunos
-                  de los lugares más increíbles para observar aves y disfrutar de la belleza natural de la costa.
-                  También se encarga de la organización de los viajes y de la
-                  atención personalizada a los clientes. Cree firmemente que la observación de aves es una forma de
-                  conectar con la naturaleza y contribuir a su conservación, parte del alma de nuestro emprendimiento.
-                </p>
-              </div>
-          </li>
+            <li>
+              <div class="name">
+                <span class="photo">
+                  <img src="img/mara.svg" alt="foto de Mara" width="104px" height="118px"></span>
+                <h3>Mara</h3>
+                <h4>Organización</h4>
+                <div class="experience">
 
-          <li>
-            <div class="name">
-              <span class="photo">
-                <img src="img/mara.svg" alt="foto de Mara" width="104px" height="118px"></span>
-              <h3>Mara</h3>
-              <h4>Organización</h4>
-              <div class="experience">
+                  <p>Mara es una bibliotecóloga y escritora que siempre ha sentido una gran pasión por los libros y
+                    la naturaleza. Desde joven ha disfrutado de la lectura y la escritura, pero también ha encontrado
+                    en la observación de aves una forma de conectar con la naturaleza y disfrutar del mundo exterior.
+                    Se unió a la empresa, donde su habilidad para organizar y clasificar la información se ha
+                    convertido en una gran herramienta para mantener registros detallados de los avistamientos de aves y
+                    los viajes de los turistas. Es la responsable de llevar a cabo un registro detallado de cada viaje y
+                    avistamiento de aves, y utiliza sus habilidades de bibliotecóloga para clasificar y organizar la
+                    información, para hacerla fácilmente accesible para la empresa y los turistas.
+                  </p>
+                </div>
+            </li>
 
-                <p>Mara es una bibliotecóloga y escritora que siempre ha sentido una gran pasión por los libros y
-                  la naturaleza. Desde joven ha disfrutado de la lectura y la escritura, pero también ha encontrado
-                  en la observación de aves una forma de conectar con la naturaleza y disfrutar del mundo exterior.
-                  Se unió a la empresa, donde su habilidad para organizar y clasificar la información se ha
-                  convertido en una gran herramienta para mantener registros detallados de los avistamientos de aves y
-                  los viajes de los turistas. Es la responsable de llevar a cabo un registro detallado de cada viaje y
-                  avistamiento de aves, y utiliza sus habilidades de bibliotecóloga para clasificar y organizar la
-                  información, para hacerla fácilmente accesible para la empresa y los turistas.
-                </p>
-              </div>
-          </li>
+            <li>
+              <div class="name">
+                <span class="photo">
+                  <img src="img/fernando.svg" alt="foto de Fernando" width="104px" height="118px"></span>
+                <h3>Fernando</h3>
+                <h4>Comunicación</h4>
+                <div class="experience">
 
-          <li>
-            <div class="name">
-              <span class="photo">
-                <img src="img/fernando.svg" alt="foto de Fernando" width="104px" height="118px"></span>
-              <h3>Fernando</h3>
-              <h4>Comunicación</h4>
-              <div class="experience">
-
-                <p>Fernando trabaja en comunicación y prensa en distintas instituciones y como documentalista
-                  independiente sobre temas de historia, ciencia y cultura. Durante el proceso de realización de
-                  uno de sus trabajos audiovisuales conoció el apasionante mundo de la observación de aves, un tema que
-                  le permitió conocer gente y lugares de lo más diversos. Como parte de la empresa se ocupa de
-                  compartir la agenda de actividades, la variedad de nuestras propuestas y las novedades sobre avistaje
-                  de aves y ecoturismo.
-                </p>
-              </div>
-          </li>
-    </section>
+                  <p>Fernando trabaja en comunicación y prensa en distintas instituciones y como documentalista
+                    independiente sobre temas de historia, ciencia y cultura. Durante el proceso de realización de
+                    uno de sus trabajos audiovisuales conoció el apasionante mundo de la observación de aves, un tema
+                    que
+                    le permitió conocer gente y lugares de lo más diversos. Como parte de la empresa se ocupa de
+                    compartir la agenda de actividades, la variedad de nuestras propuestas y las novedades sobre
+                    avistaje
+                    de aves y ecoturismo.
+                  </p>
+                </div>
+            </li>
+      </section>
   </main>
 
   <footer id="footer" class="container bg-light text-center text-lg-start">

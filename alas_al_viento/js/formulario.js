@@ -1,4 +1,4 @@
-var destinos=['Esteros del Ibera','Cataratas','Puerto Madrin','Saltos del Mocona'];
+var destinos=['Esteros del Iberá','Cataratas','Puerto Madryn','Saltos del Mocona'];
 
 const selected = document.getElementById("destiny");
 for(let i=0; i < destinos.length; i++) {
@@ -52,11 +52,10 @@ function formsBtn(valueBtn) {
 };
 
 function SubmitForms() {
-  console.log("LLamo a la funcion");
      if (check == "on") {
       check = "NO enviaremos notificaciones";
      } else {
-      check = "Se enviaran notificaciones";
+      check = "Se enviarán notificaciones";
      }
   const nameM = fullName.value;
   const emailM = email.value;
@@ -64,14 +63,14 @@ function SubmitForms() {
   forms[1].reset();
   forms[0].classList.toggle("d-none");
   forms[1].classList.toggle("d-none");
-   alert (`${nameM} ya registramos su pedido de cotizacion, ${check} al correo ${emailM}, Gracias por la consulta.`);
+   alert (`${nameM} ya registramos su pedido de cotización, ${check} al correo ${emailM}, Gracias por la consulta.`);
   //document.getElementById("bodyModal").innerHTML = `<p>${nameM} ya registramos su pedido de cotizacion, ${check} al correo ${emailM}, Gracias por la consulta.<p>`;
  }
 
   function ValidFrom1 () {
      let retorno = 0;
     if (fullName.value === "") {
-      alert("El campo nombre no debe estar vacio")
+      alert("El campo nombre no debe estar vacío")
       retorno = 1;
       return retorno;
     }
@@ -79,14 +78,14 @@ function SubmitForms() {
      emailRegex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
         if ( !emailRegex.test(email.value)) {
           retorno = 1;
-          alert("No es una direccion de mail valida")
+          alert("No es una dirección de mail válida")
           retorno = 1;
           return retorno;
         }
   }
     if (email.value === "") {
        retorno = 1;
-       alert("Debe ingresar una direccion de email.")
+       alert("Debe ingresar una dirección de email.")
        return retorno;
      }
       return retorno;
@@ -97,17 +96,17 @@ function SubmitForms() {
     
     if ( isNaN(inputPerson.value)) {
           console.log(inputPerson.value);
-          alert("El campo cantidad de personas debe ser numerico.")
+          alert("El campo cantidad de personas debe ser numérico.")
           retorno = 1;
           return retorno;
         }
     if (inputPerson.value === "") {
-          alert("El campo cantidad de personas no debe estar vacio")
+          alert("El campo cantidad de personas no debe estar vacío")
           retorno = 1;
           return retorno;
     }
     if (destiny.value === "") {
-      alert("El campo Destino no debe estar vacio")
+      alert("El campo Destino no debe estar vacío")
       retorno = 1;
       return retorno;
     }
