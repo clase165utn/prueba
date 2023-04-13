@@ -1,0 +1,47 @@
+#multistep {
+    background-image: url("../img/valdes2.jpg");
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+  }
+  
+  #multistep form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 3%;
+    height: 500px;
+    background: rgb(247, 244, 241);
+    opacity: .8;
+    padding: 2rem;
+    box-shadow: 4px 4px 8px;
+    margin-top: 15px;
+    border-style: solid ;
+  }
+  
+  input,select,textarea {
+  border-color: aliceblue;
+  border-radius: 5px;
+  border: 1px solid #39c;
+  width: 290px;
+  font-size: 12px;
+  padding: 2px;
+  font-family: "Homer Simpson UI";
+  }
+  
+  input,select,textarea:focus{
+      outline: none;
+  }
+  
+  legend,label {
+    font: oblique bold 120% cursive;font: oblique bold 120% cursive;
+    font-size: 15px;
+  }
+  
+  #emailHelp {
+    font: oblique bold 120% cursive;font: oblique bold 120% cursive;
+    font-size: 15px;
+  }
+  
