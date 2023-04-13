@@ -14,11 +14,11 @@
 
   <!-- Favicon -->
   <link rel="icon" href="img/favicon.png">
-<!--Agregado para formulario  -->
-<link rel="stylesheet" href="styles/formulario.css">
-<!--Fin agregado formulario  -->
+  <!--Agregado para formulario  -->
+  <link rel="stylesheet" href="styles/formulario.css">
+  <!--Fin agregado formulario  -->
   <link rel="stylesheet" href="styles/general.css">
-  
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Nunito&display=swap" rel="stylesheet">
@@ -70,9 +70,7 @@
     <section id="intro">
       <div class="wrapper">
         <!-- Acá va el formulario -->
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, nisi nostrum ullam aut officia
-          quibusdam repudiandae error, cupiditate rem impedit laboriosam et reiciendis perspiciatis, beatae quis
-          facilis quidem accusantium explicabo!</p>
+        <p>Avistaje de aves <br />como nunca viste.</p>
       </div>
       <video autoplay loop muted>
         <source src="video/pajarito.mp4" type="video/mp4">
@@ -157,81 +155,87 @@
         </div>
       </div>
     </section>
-<!-- aca agrego el codigo del formulario-->
-<div id="showForm">Hace Click para estar mas cerca de tu proximo viaje.</div>
-<div class="container">
-  <!--h2 class="display-5">Contacto</h2-->
-  <section id="multistep" class="row mt-1">
-    <div class="col-sm-10 col-md-6 col-lg-6">
 
-      <!-- step 1 -->
-      <form id="form_1">
-        <fieldset>
-          <legend class="mb-5 text-center bg-info">Datos personales</legend>
-          <div class="mt-3">
-              <label for="fullName" class="">Nombre y Apellido</label>
-          </div><div>
-              <input type="text" class="" required id="fullName">
+    <section id="formulario">
+      <!-- Formulario -->
+      <h3>Completá el formulario para estar mas cerca de tu próximo viaje</h3>
+      <div class="container">
+        <!--h2 class="display-5">Contacto</h2-->
+        <div id="multistep" class="row mt-1">
+          <div class="col-sm-10 col-md-6 col-lg-6">
+
+            <!-- step 1 -->
+            <form id="form_1">
+              <fieldset>
+                <legend class="mb-5 text-center bg-info">Datos personales</legend>
+                <div class="mt-3">
+                  <label for="fullName" class="">Nombre y Apellido</label>
+                </div>
+                <div>
+                  <input type="text" class="" required id="fullName">
+                </div>
+                <div class="mt-3">
+                  <label for="phone">Teléfono</label>
+                </div>
+                <div>
+                  <input type="tel" id="phone" class="">
+                </div>
+                <div class="mt-3">
+                  <label for="email" class="form-label">Correo electrónico</label>
+                </div>
+                <div>
+                  <input type="email" id="email" class="" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="">El correo sera usado solamente por nuestra plataforma.</div>
+                </div>
+                <div class="mt-3 form-check">
+                  <input type="checkbox" id="check-box" class="form-check-input">
+                  <label class="form-check-label" for="check-box">Enviar promociones</label>
+                </div>
+              </fieldset>
+              <div>
+                <button id="btn-next-f1" type="button" class="btn-form btn btn-outline-dark">Siguiente</button>
+              </div>
+            </form>
+
+            <!-- Formulario 2 -->
+            <form id="form_2" class="d-none">
+              <fieldset>
+                <legend class="mb-5 text-center bg-info">Seleccione un destino</legend>
+                <div class="mt-3">
+                  <label for="input" class="">¿Cuantas personas viajan?</label>
+                </div>
+                <div>
+                  <input type="text" id="inputPerson" class="">
+                </div>
+                <div class="mt-3">
+                  <label for="destiny" class="">Nuestros destinos</label>
+                </div>
+                <div>
+                  <select name="destiny" id="destiny" class="">
+                    <option value=""></option selected>
+                  </select>
+                </div>
+
+                <div class="mt-3">
+                  <label for="message" class="">Dejenos un mensaje</label>
+                </div>
+                <div>
+                  <textarea id="message" class="" enabled cols="30" rows="5"></textarea>
+                </div>
+                <div>
+                  <button id="btn-prev-f2" type="button" class="btn-form btn btn-outline-dark">Anterior</button>
+                  <button id="btn-submit" type="button" class="btn-form btn btn-outline-dark" enabled>Finalizar</button>
+
+                </div>
+              </fieldset>
+            </form>
+
           </div>
-          <div class="mt-3">
-            <label for="phone">Teléfono</label>
-          </div><div>
-            <input type="tel" id="phone" class="">
-          </div>
-          <div class="mt-3">
-              <label for="email" class="form-label">Correo electrónico</label>
-          </div><div>
-              <input type="email" id="email" class="" aria-describedby="emailHelp">
-              <div id="emailHelp" class="">El correo sera usado solamente por nuestra plataforma.</div>
-            </div>
-          <div class="mt-3 form-check">
-              <input type="checkbox" id="check-box" class="form-check-input">
-              <label class="form-check-label" for="check-box">Enviar promociones</label>
-            </div>
-      </fieldset>
-        <div>
-          <button id="btn-next-f1" type="button" class="btn-form btn btn-outline-dark">Siguiente</button>
         </div>
-      </form>
+      </div>
+      <!-- fin del formulario-->
+    </section>
 
-      <!-- Formulario 2 -->
-      <form id="form_2" class="d-none">
-        <fieldset>
-          <legend class="mb-5 text-center bg-info">Seleccione un destino</legend>
-          <div class="mt-3">
-              <label for="input" class="">¿Cuantas personas viajan?</label>
-          </div><div>
-              <input type="text" id="inputPerson"  class="">
-          </div>
-          <div class="mt-3">
-              <label for="destiny" class="">Nuestros destinos</label>
-          </div><div>
-              <select name="destiny" id="destiny" class="">
-                  <option value=""></option selected>
-              </select>
-          </div>
-          
-          <div class="mt-3">
-              <label for="message" class="">Dejenos un mensaje</label>
-          </div><div>
-              <textarea id="message" class="" enabled cols="30"
-                rows="5"></textarea>
-          </div>
-          <div>
-          <button id="btn-prev-f2" type="button" class="btn-form btn btn-outline-dark">Anterior</button>
-          <button id="btn-submit" type="button" class="btn-form btn btn-outline-dark" enabled
-          >Finalizar</button>
-            
-        </div>
-      </fieldset>
-      </form>
-    </div>
-  </section>
-</div>
-
-
-
-<!-- fin del formulario-->
     <section id="quienesSomos">
       <div class="container">
         <h2>¿Quiénes Somos?</h2>

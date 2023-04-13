@@ -1,13 +1,14 @@
 #multistep {
     background-image: url("../img/valdes2.jpg");
     background-size: cover;
-    height: 600px;
+    /* height: 600px; */
     display: flex;
-    justify-content: left;
-    align-items: left;
-  }
-  
-  #multistep form {
+    justify-content: flex-end;
+    margin-top: 0 !important;
+    padding: 10px;
+}
+
+#multistep form {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -17,31 +18,32 @@
     opacity: .8;
     padding: 2rem;
     box-shadow: 4px 4px 8px;
-    margin-top: 15px;
-    border-style: solid ;
-  }
-  
-  input,select,textarea {
-  border-color: aliceblue;
-  border-radius: 5px;
-  border: 1px solid #39c;
-  width: 290px;
-  font-size: 12px;
-  padding: 2px;
-  font-family: "Homer Simpson UI";
-  }
-  
-  input,select,textarea:focus{
-      outline: none;
-  }
-  
-  legend,label {
-    font: oblique bold 120% cursive;font: oblique bold 120% cursive;
+    /* margin-top: 15px; */
+    /* border-style: solid; */
+}
+
+input,select,textarea {
+    border-color: aliceblue;
+    border-radius: 5px;
+    border: 1px solid #39c;
+    width: 290px;
+    font-size: 12px;
+    padding: 2px;
+    font-family: "Homer Simpson UI";
+}
+
+input,select,textarea:focus {
+    outline: none;
+}
+
+legend,label {
+    /*     font: oblique bold 120% cursive; */
+    /* font: oblique bold 120% cursive; */
     font-size: 15px;
-  }
-  
-  #emailHelp {
-    font: oblique bold 120% cursive;font: oblique bold 120% cursive;
+}
+
+#emailHelp {
+    /* font: oblique bold 120% cursive; */
+    /* font: oblique bold 120% cursive; */
     font-size: 15px;
-  }
-  
+}
