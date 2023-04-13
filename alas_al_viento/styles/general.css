@@ -33,6 +33,7 @@ body {
     right: 5%;
     bottom: 20px;
     padding: 20px;
+    z-index: 100;
 }
 
 #intro .wrapper p {
