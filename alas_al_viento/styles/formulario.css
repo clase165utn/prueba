@@ -32,6 +32,19 @@ input,select,textarea {
     font-family: "Homer Simpson UI";
 }
 
+#tiempo {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    margin-top: 1px;
+    text-decoration: none;
+    /*display: inline-block;*/
+    font-size: 16px;
+    /*margin: 4px 2px;*/
+    cursor: pointer;
+  }   
+
 input,select,textarea:focus {
     outline: none;
 }

@@ -1,4 +1,5 @@
 var destinos=['Esteros del Iberá','Cataratas','Puerto Madryn','Saltos del Mocona'];
+var ciudades=['Buenos Aires','Merlo','Ushuaia','Puerto Madryn'];
 
 const selected = document.getElementById("destiny");
 for(let i=0; i < destinos.length; i++) {
@@ -7,7 +8,53 @@ for(let i=0; i < destinos.length; i++) {
     opcionselected.text = destinos[i];
     selected.appendChild(opcionselected);
   }
-     
+
+  const selectedCities = document.getElementById("ciudades");
+  for(let i=0; i < ciudades.length; i++) {
+      const opcionselec = document.createElement('option');
+      opcionselec.value = ciudades[i];
+      opcionselec.text = ciudades[i];
+      selectedCities.appendChild(opcionselec);
+    }
+
+  var weatherData = "";
+  const getWeather = () => {
+    var CitySelect = document.getElementById("ciudades").value;
+       if (CitySelect =="") {
+        CitySelect="Buenos Aires";
+       }
+    console.log(CitySelect);
+    fetch("https://api.openweathermap.org/data/2.5/weather?q=" + CitySelect + "&lang=es&units=metric&appid=93b1efac80f5057bb9d121b360592009")
+      .then((response) => response.json())
+      .then(datosQueTraeLaApi => { const weatherData = {  };
+        /*console.log(datosQueTraeLaApi);      
+        console.log(datosQueTraeLaApi.main.temp);
+        console.log(datosQueTraeLaApi.main.humidity);
+        console.log(datosQueTraeLaApi.main.pressure);
+        console.log(datosQueTraeLaApi.wind.speed);
+        console.log(datosQueTraeLaApi.weather[0].description);*/
+        document.getElementById("ResultadoCiudad").innerText = `Temperatura ${datosQueTraeLaApi.main.temp} / Presion ${datosQueTraeLaApi.main.pressure} / Humedad: ${datosQueTraeLaApi.main.humidity}% / ${datosQueTraeLaApi.weather[0].description}`;      
+       })
+  .catch(() => {
+    console.log("Algo salio mal");
+  }); 
+  }
+  
+    var CitySelect = document.querySelector(".ciudades");
+    CitySelect.addEventListener("change", (event) => getWeather());  
+
+
+  const btnOpenf = document.getElementById("multistep");
+  btnOpenf.addEventListener("click", ocultarFormulario());
+
+   
+  function ocultarFormulario () {
+    document.getElementById("multistep").style.visibility = "visibility";
+    //document.getElementById("multistep").toggle("d-none");
+    }
+    
+  
+  
 const email = document.getElementById("email");
 const phone = document.getElementById("phone");
 const fullName = document.getElementById("fullName");
@@ -17,7 +64,11 @@ const destiny = document.getElementById("destiny");
 const message = document.getElementById("message");
 var check = document.getElementById("check-box").value;
 
-console.log(check)
+
+let suscribe = document.getElementById("suscribe");
+suscribe.addEventListener("click", () => document.getElementById("emailcf").value="");
+/*suscribe.addEventListener("click", () => console.log(suscribe));*/
+
 const forms = document.querySelectorAll("form");
 const btnForm = document.getElementsByClassName("btn-form");
 for (let i = 0; i < btnForm.length; i++) {
@@ -52,10 +103,12 @@ function formsBtn(valueBtn) {
 };
 
 function SubmitForms() {
-     if (check == "on") {
-      check = "NO enviaremos notificaciones";
-     } else {
+     check = document.getElementById("check-box").checked;
+     console.log(check)
+     if (check == true) {
       check = "Se enviarán notificaciones";
+     } else {
+      check = "NO enviaremos notificaciones";
      }
   const nameM = fullName.value;
   const emailM = email.value;

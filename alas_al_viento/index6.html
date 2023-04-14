@@ -18,13 +18,14 @@
   <link rel="stylesheet" href="styles/formulario.css">
   <!--Fin agregado formulario  -->
   <link rel="stylesheet" href="styles/general.css">
+  <script defer src="./js/formulario.js"></script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Nunito&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body onload="getWeather()">
   <header class="container">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid align-bottom">
@@ -76,7 +77,11 @@
         <source src="video/pajarito.mp4" type="video/mp4">
       </video>
     </section>
-
+        <div id="tiempo" class="col-sm-12 col-md-12 col-lg-12 text-lg-center">Clima - Ciudades <select name="ciudades" id="ciudades" class="ciudades"> 
+          <option value="Buenos Aires">Buenos Aires</option selected>                                   
+          </select> 
+              <i id="ResultadoCiudad">El resultado es: --....</i>
+       </div>
     <h2 class="welcome">¡Les damos la bienvenida a nuestra empresa de turismo de avistaje de aves en Argentina!</h2>
 
     <section id="queHacemos">
@@ -383,7 +388,7 @@
           <form action="formulario" method="post" autocomplete="on">
             <label for="">
               <input type="email" name="email" required placeholder="email">
-              <input id="suscribe" type="submit" value="Quiero suscribirme" /></label>
+              <input id="suscribe" type="button" value="Quiero suscribirme" data-bs-toggle="modal" data-bs-target="#formModal"></label>
           </form>
         </div>
         <!--Grid column-->
@@ -399,8 +404,28 @@
     </div>
     <!-- Copyright -->
   </footer>
+<!-- MODAL -->
+<div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        La suscripcion se genero con exito, le estaremos enviando algunas promociones. 
+        Gracias. Atte Alas al viento.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 
-  <script src="./js/formulario.js"></script>
+<!--Fin modal-->
+  
   <script src="https://kit.fontawesome.com/76c9ca720a.js" crossorigin="anonymous"></script>
 
 </body>
