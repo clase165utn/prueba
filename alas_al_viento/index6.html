@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alas al Viento</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+
+  <!-- Favicon -->
+  <link rel="icon" href="img/favicon.png">
+  <!--Agregado para formulario  -->
+  <link rel="stylesheet" href="styles/formulario.css">
+  <!--Fin agregado formulario  -->
+  <link rel="stylesheet" href="styles/general.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Nunito&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid align-bottom">
+        <a href="#" class="navbar-brand">
+          <h1><img src="./img/logo_alas_al_viento.png" alt="Alas al viento - Bird watching" width="163" height="119"
+              class="d-inline-block align-middle mr-2"></h1>
+
+        </a>
+
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ms-auto ">
+            <li class="nav-item">
+              <a class="nav-link" href="#queHacemos">¿Que hacemos?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#destinos">Destinos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#quienesSomos">¿Quienes somos?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">Contacto</a>
+            </li>
+          </ul>
+          <div id="ws"> <a
+              href="https://api.whatsapp.com/send?phone=5491164367712&text=Consulta%20desde%20la%20web%Alas al Viento"
+              target="_blank"> <img src="img/icons8-whatsapp.gif" alt="icono de whatsapp"></a> </div>
+          <div class="ms-sm-5 d-flex column-gap-3">
+            <a href="#" target="_blank" class="rrssicon"><i class="fa-brands fa-instagram fa-lg"></i></a>
+            <a href="#" target="_blank" class="rrssicon"><i class="fa-brands fa-facebook fa-lg"></i></a>
+            <a href="#" target="_blank" class="rrssicon"><i class="fa-brands fa-twitter fa-lg"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="intro">
+      <div class="wrapper">
+        <!-- Acá va el formulario -->
+        <p>Avistaje de aves <br />como nunca viste.</p>
+      </div>
+      <video autoplay loop muted>
+        <source src="video/pajarito.mp4" type="video/mp4">
+      </video>
+    </section>
+
+    <h2 class="welcome">¡Les damos la bienvenida a nuestra empresa de turismo de avistaje de aves en Argentina!</h2>
+
+    <section id="queHacemos">
+      <div class="wrapper">
+        <h3>¿Qué hacemos?</h3>
+        <p><b>Argentina es el hogar de más de 1000 especies de aves, muchas endémicas de la región.</b>
+          <br>Nuestros tours
+          están
+          diseñados para: realizar excursiones a través de los paisajes más impresionantes de Argentina; avistar aves en
+          su hábitat natural; estar guiados por guías profesionales y multilingües; alquiler de equipos (binoculares,
+          cámaras, ropa); registro fotográfico y audiovisual de la salida. Para lograr este viaje que no olvidarás, te
+          ofrecemos la posibilidad de llevarte ida y vuelta hasta cada destino, el acompañamiento de guías expertas
+          multilingües, y un equipo profesional que podrá asesorarte con todas tus necesidades y deseos, siempre en
+          consonancia con el ecoturismo, el respeto por la naturaleza, y la biodiversidad.
+        </p>
+      </div>
+    </section>
+    <section id="destinos">
+      <h3>Destinos</h3>
+
+      <div id="carouselExampleFade" class="carousel slide carousel-fade">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/esteros1.jpeg" class="d-block w-100"
+              alt="paisaje de un rio con árboles y flores de irupé flotando">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Esteros del Iberá, Corrientes</h5>
+              <p>Ofrece una de las mayores concentraciones de fauna de Argentina y una gran variedad de aves, incluyendo
+                el aguará guazú, la yacutinga, el loro hablador, el hornero, el jacana y el cardenal amarillo.</p>
+              <div class="dates">
+                Fechas de salidas estipuladas: 25/05/2023 - 19/06/2023 - 07/07/2023
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/salta1.jpeg" class="d-block w-100" alt="paisaje de un rio con árboles en una lomada">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Reserva Natural Río Ñambiquara, Salta</h5>
+              <p>En esta reserva se protege el bosque y la selva subtropical de las yungas. En él habitan aves endémicas
+                como el yal corta corriente, el águila solitaria, el tucán grande y el cardenal amarillo.</p>
+              <div class="dates">Fechas de salidas estipuladas: 18/04/2023 - 10/05/2023- 26/06/2023</div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/los glaciares 1.jpg" class="d-block w-100"
+              alt="foto del glaciar Perito Moreno rodeado de montañas nevadas">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Parque Nacional Los Glaciares, Santa Cruz</h5>
+              <p>Además de sus conocidos glaciares, este destino ofrece una gran variedad de aves como el cóndor andino,
+                el águila mora, el carancho, el flamenco andino y el pato crestón.</p>
+              <div class="dates">Fechas de salidas estipuladas:
+                25/05/2023 - 19/06/2023 - 07/07/2023</div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/valdes2.jpg" class="d-block w-100"
+              alt="foto de un acantilado en una playa sobre el mar y el océano Atlántico">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Península Valdés, Chubut</h5>
+              <p>Uno de los mejores destinos para la observación de aves marinas en nuestro país: con especies como el
+                pingüino de Magallanes, el cormorán imperial, el petrel gigante, el albatros errante y el petrel de
+                Wilson.</p>
+              <div class="dates">Fechas de salidas estipuladas: 14/10/2023 - 2/11/2023 - 17/11/2023</div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="formulario">
+      <!-- Formulario -->
+      <h3>Completá el formulario para estar mas cerca de tu próximo viaje</h3>
+      <div class="container">
+        <!--h2 class="display-5">Contacto</h2-->
+        <div id="multistep" class="row mt-1">
+          <div class="col-sm-10 col-md-6 col-lg-6">
+
+            <!-- step 1 -->
+            <form id="form_1">
+              <fieldset>
+                <legend class="mb-5 text-center bg-info">Datos personales</legend>
+                <div class="mt-3">
+                  <label for="fullName" class="">Nombre y Apellido</label>
+                </div>
+                <div>
+                  <input type="text" class="" required id="fullName">
+                </div>
+                <div class="mt-3">
+                  <label for="phone">Teléfono</label>
+                </div>
+                <div>
+                  <input type="tel" id="phone" class="">
+                </div>
+                <div class="mt-3">
+                  <label for="email" class="form-label">Correo electrónico</label>
+                </div>
+                <div>
+                  <input type="email" id="email" class="" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="">El correo sera usado solamente por nuestra plataforma.</div>
+                </div>
+                <div class="mt-3 form-check">
+                  <input type="checkbox" id="check-box" class="form-check-input">
+                  <label class="form-check-label" for="check-box">Enviar promociones</label>
+                </div>
+              </fieldset>
+              <div>
+                <button id="btn-next-f1" type="button" class="btn-form btn btn-outline-dark">Siguiente</button>
+              </div>
+            </form>
+
+            <!-- Formulario 2 -->
+            <form id="form_2" class="d-none">
+              <fieldset>
+                <legend class="mb-5 text-center bg-info">Seleccione un destino</legend>
+                <div class="mt-3">
+                  <label for="input" class="">¿Cuantas personas viajan?</label>
+                </div>
+                <div>
+                  <input type="text" id="inputPerson" class="">
+                </div>
+                <div class="mt-3">
+                  <label for="destiny" class="">Nuestros destinos</label>
+                </div>
+                <div>
+                  <select name="destiny" id="destiny" class="">
+                    <option value=""></option selected>
+                  </select>
+                </div>
+
+                <div class="mt-3">
+                  <label for="message" class="">Dejenos un mensaje</label>
+                </div>
+                <div>
+                  <textarea id="message" class="" enabled cols="30" rows="5"></textarea>
+                </div>
+                <div>
+                  <button id="btn-prev-f2" type="button" class="btn-form btn btn-outline-dark">Anterior</button>
+                  <button id="btn-submit" type="button" class="btn-form btn btn-outline-dark" enabled>Finalizar</button>
+
+                </div>
+              </fieldset>
+            </form>
+
+          </div>
+        </div>
+      </div>
+      <!-- fin del formulario-->
+    </section>
+
+    <section id="quienesSomos">
+      <div class="container">
+        <h2>¿Quiénes Somos?</h2>
+        <ul>
+          <li>
+            <div class="name">
+              <span class="photo">
+                <img src="img/carlos.svg" alt="foto de Carlos" width="104px" height="118px"></span>
+              <h3>Carlos</h3>
+              <h4>Fundador</h4>
+              <div class="experience">
+
+                <p>Carlos es un programador apasionado por la observación de aves. Desde joven ha sido un amante de la
+                  naturaleza y ha pasado muchos años explorando diferentes lugares para encontrar nuevas especies de
+                  aves. Después de trabajar por varios años como programador, combinó sus habilidades técnicas con su
+                  pasión por la observación de aves y fundó esta empresa de turismo especializada en viajes para la
+                  observación de aves. Es el responsable de haber unido a este grupo de profesionales interdisciplinario
+                  para ofrecerte la más integral de las experiencias de ecoturismo.
+                </p>
+              </div>
+          </li>
+          <li>
+            <div class="name">
+              <span class="photo">
+                <img src="img/carolina.svg" alt="foto de Carolina" width="104px" height="118px"></span>
+              <h3>Carolina</h3>
+              <h4>Diseñadora</h4>
+              <div class="experience">
+                <p>Caro es una diseñadora de imagen y fotógrafa apasionada por la observación de aves. Desde joven ha
+                  estado interesada en la fotografía de naturaleza y ha combinado su amor por las aves con su
+                  experiencia en diseño de imagen. Unió su pasión por la fotografía de aves y su experiencia en diseño
+                  en nuestra empresa, utilizando sus habilidades en diseño para crear campañas publicitarias y
+                  promocionar el emprendimiento. También ha colaborado en la creación de guías de identificación de aves
+                  para los clientes de la empresa. Con su experiencia en fotografía y diseño de imagen, Caro ha ayudado
+                  a promover la observación de aves como una actividad única y emocionante.
+                </p>
+              </div>
+          </li>
+          <li>
+            <div class="name">
+              <span class="photo">
+                <img src="img/irene.svg" alt="foto de Irene" width="104px" height="118px"></span>
+              <h3>Irene</h3>
+              <h4>Guía Turística</h4>
+              <div class="experience">
+
+                <p>Irene es una apasionada de los idiomas y la comunicación. Desde joven, ha estudiado varios
+                  idiomas y ha viajado por todo el mundo para sumergirse en diferentes culturas y formas de vida.
+                  Como guía turística, Irene no sólo es capaz de mostrar a los turistas algunos de los lugares más
+                  increíbles para observar aves, sino que también es capaz de comunicarse con ellos en varios
+                  idiomas y ayudarlos a comprender la cultura y las costumbres locales.
+                  Irene es una experta en la comunicación intercultural y cree firmemente que la observación de
+                  aves es una forma de unir a las personas de diferentes culturas y lenguas en un mismo objetivo:
+                  apreciar proteger la belleza natural del mundo.
+                </p>
+              </div>
+          </li>
+
+          <li>
+            <div class="name">
+              <span class="photo">
+                <img src="img/marisa.svg" alt="foto de Marisa" width="104px" height="118px"></span>
+              <h3>Marisa</h3>
+              <h4>Guía Turística</h4>
+              <div class="experience">
+
+                <p>Marisa es una apasionada del mar y los chocolates, y también una entusiasta observadora de
+                  aves. Desde muy joven, se ha sentido atraída por la naturaleza y la vida marina, y ha pasado muchos
+                  veranos explorando las playas y observando las aves. Después de varios años siguió su pasión por la
+                  naturaleza y se unió a nuestra empresa como guía turística. Marisa ha llevado a los turistas a algunos
+                  de los lugares más increíbles para observar aves y disfrutar de la belleza natural de la costa.
+                  También se encarga de la organización de los viajes y de la
+                  atención personalizada a los clientes. Cree firmemente que la observación de aves es una forma de
+                  conectar con la naturaleza y contribuir a su conservación, parte del alma de nuestro emprendimiento.
+                </p>
+              </div>
+          </li>
+
+          <li>
+            <div class="name">
+              <span class="photo">
+                <img src="img/mara.svg" alt="foto de Mara" width="104px" height="118px"></span>
+              <h3>Mara</h3>
+              <h4>Organización</h4>
+              <div class="experience">
+
+                <p>Mara es una bibliotecóloga y escritora que siempre ha sentido una gran pasión por los libros y
+                  la naturaleza. Desde joven ha disfrutado de la lectura y la escritura, pero también ha encontrado
+                  en la observación de aves una forma de conectar con la naturaleza y disfrutar del mundo exterior.
+                  Se unió a la empresa, donde su habilidad para organizar y clasificar la información se ha
+                  convertido en una gran herramienta para mantener registros detallados de los avistamientos de aves y
+                  los viajes de los turistas. Es la responsable de llevar a cabo un registro detallado de cada viaje y
+                  avistamiento de aves, y utiliza sus habilidades de bibliotecóloga para clasificar y organizar la
+                  información, para hacerla fácilmente accesible para la empresa y los turistas.
+                </p>
+              </div>
+          </li>
+
+          <li>
+            <div class="name">
+              <span class="photo">
+                <img src="img/fernando.svg" alt="foto de Fernando" width="104px" height="118px"></span>
+              <h3>Fernando</h3>
+              <h4>Comunicación</h4>
+              <div class="experience">
+
+                <p>Fernando trabaja en comunicación y prensa en distintas instituciones y como documentalista
+                  independiente sobre temas de historia, ciencia y cultura. Durante el proceso de realización de
+                  uno de sus trabajos audiovisuales conoció el apasionante mundo de la observación de aves, un tema que
+                  le permitió conocer gente y lugares de lo más diversos. Como parte de la empresa se ocupa de
+                  compartir la agenda de actividades, la variedad de nuestras propuestas y las novedades sobre avistaje
+                  de aves y ecoturismo.
+                </p>
+              </div>
+          </li>
+    </section>
+  </main>
+
+  <footer id="footer" class="container bg-light text-center text-lg-start">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+
+
+          <!--Grid column-->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!4v1681331070844!6m8!1m7!1sa5-P63pbhCb3Fy9vmxHuKw!2m2!1d-34.54389481577529!2d-58.46074070209117!3f256.60577!4f0!5f0.7820865974627469"
+            width="500" height="450" style="border:0;" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <!--Grid column-->
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Nos encontrás en</h5>
+
+          <address>Avda.del Libertador 7602 <br> CABA - Buenos Aires - Argentina <br>
+            Teléfono <a href="+54 911 6436 7712"> +54 911 6436 7712 </a><br>
+            Email <a href="mailto:info@alasalviento.com?subject=Asunto: Solicito info sobre&body=Mensaje:">
+              info@alasalviento.com</a></address> <br><br><br><br>
+          <p class="card-text">Nos encantaría tenerte en nuestra "Lista de amigos" para poder enviarte
+            nuestras newsletters con las últimas novedades y mantenerte actualizado. <br><br>
+            ¿Te suscribís? Dejanos tu</p>
+          <form action="formulario" method="post" autocomplete="on">
+            <label for="">
+              <input type="email" name="email" required placeholder="email">
+              <input id="suscribe" type="submit" value="Quiero suscribirme" /></label>
+          </form>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2023 Copyright:Grupo 6
+      Todos los derechos reservados.
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+  <script src="./js/formulario.js"></script>
+  <script src="https://kit.fontawesome.com/76c9ca720a.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
