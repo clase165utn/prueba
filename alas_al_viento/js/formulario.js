@@ -146,10 +146,15 @@ function SubmitForms() {
   
   function ValidFrom2 () {
     let retorno = 0;
-    
-    if ( isNaN(inputPerson.value)) {
+    if(isNaN(inputPerson.value)) {
+      alert("El campo cantidad de personas debe ser numérico y mayor a cero.")
+      retorno = 1;
+      return retorno;
+    }
+
+    if ( Number.isInteger(inputPerson.value) || inputPerson.value < 1) {
           console.log(inputPerson.value);
-          alert("El campo cantidad de personas debe ser numérico.")
+          alert("El campo cantidad de personas debe ser numérico y mayor a cero.")
           retorno = 1;
           return retorno;
         }
@@ -165,3 +170,5 @@ function SubmitForms() {
     }
       return retorno;
   }
+
+  

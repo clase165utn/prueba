@@ -41,7 +41,7 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav ms-auto ">
             <li class="nav-item">
-              <a class="nav-link" href="#queHacemos">¿Que hacemos?</a>
+              <a class="nav-link" href="#queHacemos">¿Qué hacemos?</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#destinos">Destinos</a>
@@ -55,7 +55,7 @@
           </ul>
           <div id="ws"> <a
               href="https://api.whatsapp.com/send?phone=5491164367712&text=Consulta%20desde%20la%20web%Alas al Viento"
-              target="_blank"> <img src="img/icons8-whatsapp.gif" alt="icono de whatsapp"></a> </div>
+              target="_blank"> <img src="img/icons_whatsapp.png" alt="icono de whatsapp"></a> </div>
           <div class="ms-sm-5 d-flex column-gap-3">
             <a href="#" target="_blank" class="rrssicon"><i class="fa-brands fa-instagram fa-lg"></i></a>
             <a href="#" target="_blank" class="rrssicon"><i class="fa-brands fa-facebook fa-lg"></i></a>
@@ -77,11 +77,12 @@
         <source src="video/pajarito.mp4" type="video/mp4">
       </video>
     </section>
-        <div id="tiempo" class="col-sm-12 col-md-12 col-lg-12 text-lg-center">Clima - Ciudades <select name="ciudades" id="ciudades" class="ciudades"> 
-          <option value="Buenos Aires">Buenos Aires</option selected>                                   
-          </select> 
-              <i id="ResultadoCiudad">El resultado es: --....</i>
-       </div>
+    <div id="tiempo" class="col-sm-12 col-md-12 col-lg-12 text-lg-center">Clima - Ciudades <select name="ciudades"
+        id="ciudades" class="ciudades">
+        <option value="Buenos Aires">Buenos Aires</option selected>
+      </select>
+      <i id="ResultadoCiudad">El resultado es: --....</i>
+    </div>
     <h2 class="welcome">¡Les damos la bienvenida a nuestra empresa de turismo de avistaje de aves en Argentina!</h2>
 
     <section id="queHacemos">
@@ -185,8 +186,8 @@
                 <div>
                   <input type="tel" id="phone" class="">
                 </div>
-                <div class="mt-3">
-                  <label for="email" class="form-label">Correo electrónico</label>
+                <div class="mt-3 ms-auto">
+                  <label for="email" class="form-label rev">Correo electrónico</label>
                 </div>
                 <div>
                   <input type="email" id="email" class="" aria-describedby="emailHelp">
@@ -365,16 +366,16 @@
       <!--Grid row-->
       <div class="row">
         <!--Grid column-->
-        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0 d-flex justify-content-center">
 
 
           <!--Grid column-->
           <iframe
             src="https://www.google.com/maps/embed?pb=!4v1681331070844!6m8!1m7!1sa5-P63pbhCb3Fy9vmxHuKw!2m2!1d-34.54389481577529!2d-58.46074070209117!3f256.60577!4f0!5f0.7820865974627469"
-            width="500" height="450" style="border:0;" loading="lazy"
+            width="550" height="450" style="border:0;" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        <!--Grid column-->
+        <!--Grid column -->
         <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
           <h5 class="text-uppercase">Nos encontrás en</h5>
 
@@ -388,7 +389,8 @@
           <form action="formulario" method="post" autocomplete="on">
             <label for="">
               <input type="emailcf" name="emailcf" id="emailcf" required placeholder="email">
-              <input id="suscribe" type="button" value="Quiero suscribirme" data-bs-toggle="modal" data-bs-target="#formModal"></label>
+              <input id="suscribe" type="button" value="Quiero suscribirme" data-bs-toggle="modal"
+                data-bs-target="#formModal"></label>
           </form>
         </div>
         <!--Grid column-->
@@ -404,28 +406,28 @@
     </div>
     <!-- Copyright -->
   </footer>
-<!-- MODAL -->
-<div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        La suscripcion se genero con exito, le estaremos enviando algunas promociones. 
-        Gracias. Atte Alas al viento.
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+  <!-- MODAL -->
+  <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="ModalLabel">Alas al viento</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          La suscripción se generó con éxito, le estaremos enviando algunas promociones.
+          Gracias. Atte. Alas al viento.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-<!--Fin modal-->
-  
+  <!--Fin modal-->
+
   <script src="https://kit.fontawesome.com/76c9ca720a.js" crossorigin="anonymous"></script>
 
 </body>
